@@ -277,7 +277,244 @@ python main.py
 Passionate about Computer Vision, AI, Full Stack Development, and building interactive applications using Python.
 
 ---
+# 📦 Installation Guide
 
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/SauWagh/Air-Drawing.git
+```
+
+## 2. Go to the Project Folder
+
+```bash
+cd Air-Drawing
+```
+
+---
+
+# Create a Virtual Environment (Recommended)
+
+### Windows
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+```bash
+venv\Scripts\activate
+```
+
+### macOS / Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+# Install Required Libraries
+
+```bash
+pip install opencv-python mediapipe pygame pymunk numpy
+```
+
+Or install everything using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Verify Installation
+
+```bash
+python -c "import cv2, mediapipe, pygame, pymunk, numpy; print('Everything Installed Successfully!')"
+```
+
+Expected output:
+
+```
+Everything Installed Successfully!
+```
+
+---
+
+# Run the Project
+
+```bash
+python main.py
+```
+
+If your main file has another name, replace `main.py` with it.
+
+Example:
+
+```bash
+python air_drawing.py
+```
+
+---
+
+# Python Version
+
+Recommended:
+
+- Python 3.10
+- Python 3.11
+
+Python 3.12 also works for most setups.
+
+Check your version:
+
+```bash
+python --version
+```
+
+---
+
+# Required Packages
+
+| Package | Purpose |
+|----------|----------|
+| OpenCV | Webcam input and image processing |
+| MediaPipe | Hand tracking and gesture detection |
+| Pygame | Window rendering and graphics |
+| Pymunk | 2D Physics engine |
+| NumPy | Mathematical calculations |
+
+---
+
+# requirements.txt
+
+Create a file named **requirements.txt**
+
+```
+opencv-python
+mediapipe
+pygame
+pymunk
+numpy
+```
+
+Install everything:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Camera Permission
+
+Make sure your webcam is enabled.
+
+### Windows
+
+Settings → Privacy & Security → Camera
+
+Enable:
+
+- Camera Access
+- Let desktop apps access your camera
+
+---
+
+# Common Errors
+
+## ModuleNotFoundError
+
+Install missing packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Camera Not Opening
+
+Close:
+
+- Zoom
+- Teams
+- OBS
+- Discord
+- Any other application using the webcam
+
+Then restart the project.
+
+---
+
+## Black Screen
+
+- Check webcam permissions.
+- Verify the correct camera index.
+- Ensure your webcam is connected.
+
+---
+
+## MediaPipe Errors
+
+Upgrade pip:
+
+```bash
+python -m pip install --upgrade pip
+```
+
+Then reinstall:
+
+```bash
+pip install mediapipe
+```
+
+---
+
+## Slow Performance
+
+- Close unnecessary applications.
+- Reduce camera resolution if supported.
+- Ensure good lighting for faster hand detection.
+
+---
+
+# Recommended Hardware
+
+- Webcam: 720p or 1080p
+- CPU: Intel i5 / AMD Ryzen 5 or better
+- RAM: 8 GB or more
+- Operating System:
+  - Windows 10/11
+  - Ubuntu 22.04+
+  - macOS 12+
+
+---
+
+# Tested On
+
+- Windows 11
+- Python 3.11
+- OpenCV 4.x
+- MediaPipe Latest
+- Pygame 2.x
+- Pymunk 7.x
+
+---
+
+# Tips for Best Experience
+
+- Use good lighting.
+- Keep your hands fully visible.
+- Avoid cluttered backgrounds.
+- Stay about 50–80 cm from the webcam.
+- Keep the camera stable.
+
+---
+  
 # Support
 
 If you found this project useful:
