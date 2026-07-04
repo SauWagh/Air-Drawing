@@ -6,43 +6,15 @@ Instead of using a mouse or touchscreen, you simply move your hands in front of 
 
 ---
 
-# Features
-
-## Air Drawing
-
-* Draw in the air using your index finger.
-* Drawing follows your fingertip with high accuracy.
-* No mirrored drawing (your hand moves naturally).
-* Smooth brush strokes.
-* Adjustable pen thickness using pinch gesture.
-* Multiple drawing colors.
-* Real-time cursor.
-
----
-
-## Eraser
-
-* Erase drawings using a fist gesture.
-* Circular eraser with smooth removal.
-* Works naturally without changing tools.
-
----
-
-## Physics Engine
-
-After drawing, your sketches become physics objects.
-
-Features include:
-
-* Gravity
-* Collision detection
-* Bouncing
-* Friction
-* Rotation
-* Velocity-based throwing
-* Object stacking
-
-Built using **Pymunk**.
+## Features
+- Air drawing
+- Gesture recognition
+- Physics simulation
+- Brush resizing
+- Eraser
+- Object throwing
+- Multi-color support
+- Zero-mirror drawing
 
 ---
 
