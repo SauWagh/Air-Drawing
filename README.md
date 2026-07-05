@@ -5,6 +5,63 @@ A real-time computer vision application that lets you **draw in the air using ha
 Instead of using a mouse or touchscreen, you simply move your hands in front of a webcam. The application recognizes your hand gestures using MediaPipe and turns them into drawing, erasing, object manipulation, and physics interactions.
 
 ---
+## Camera Setup
+
+This project is configured to use **DroidCam** by default, which streams your Android phone's camera to your computer over Wi-Fi.
+
+### Option 1: Use DroidCam (Default)
+
+1. Install the DroidCam app on your Android phone.
+2. Connect your phone and computer to the same Wi-Fi network.
+3. Start the DroidCam app and note the IP address shown (for example, `192.168.1.100:4747`).
+4. Update the video stream URL in the code if your IP address is different:
+
+```python
+self.cap = cv2.VideoCapture("http://YOUR_PHONE_IP:4747/video")
+```
+
+Replace `YOUR_PHONE_IP` with the IP address displayed in the DroidCam app.
+
+---
+
+### Option 2: Use Your Laptop Webcam
+
+If you want to use your laptop's built-in webcam instead of DroidCam, replace this line:
+
+```python
+self.cap = cv2.VideoCapture("http://YOUR_PHONE_IP:4747/video")
+```
+
+with:
+
+```python
+self.cap = cv2.VideoCapture(0)
+```
+
+If your laptop has multiple cameras and the default camera does not open, try:
+
+```python
+self.cap = cv2.VideoCapture(1)
+```
+
+or
+
+```python
+self.cap = cv2.VideoCapture(2)
+```
+
+until the correct camera is selected.
+
+---
+
+### Troubleshooting
+
+* Make sure no other application (Zoom, Microsoft Teams, OBS, Discord, etc.) is using the camera.
+* If using DroidCam, ensure both devices are connected to the same Wi-Fi network.
+* Update the IP address if it changes after reconnecting to the network.
+* If the camera does not open, restart the application and reconnect the camera.
+
+---
 
 ## Features
 - Air drawing
